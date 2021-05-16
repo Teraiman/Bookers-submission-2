@@ -1,4 +1,8 @@
-<p id="notice">Book was successfully created.</p>
+<% if flash[:notice] %>
+    <div class="alert alert-primary" role="alert">
+        <%= notice %>
+    </div>
+<% end %>
 <p>
     <strong>Title:</strong>
     <%= @book.title %>
